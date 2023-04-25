@@ -6,4 +6,8 @@
     <string name="edusername">edusername</string>
     <string name="passwordLabel">password</string>
     <string name="usernamelbl">Username</string>
+    <string name="ingrese_a_la_app_de_asodesunidos_para_sus_gestiones_como_asociado">Ingrese a la App de AsoDesUnidos para sus gestiones como asociado</string>
+    <string name="asodesunidos">AsoDesUnidos</string>
+    <string name="ingrese_su_usuario">Ingrese su usuario</string>
+    <string name="ingrese_su_contrase_a">Ingrese su contraseña</string>
 </resources>
