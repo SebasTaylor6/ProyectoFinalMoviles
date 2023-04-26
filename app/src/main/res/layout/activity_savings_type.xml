@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextView para mostrar el nombre de la actividad -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ahorros del cliente"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tabla para los ahorros navideños -->
+    <TextView
+        android:id="@+id/textViewNavideno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Navideño"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <Button
+        android:id="@+id/buttonNavideno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activar/Desactivar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNavideno" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutNavideno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNavideno">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewCantidadNavideno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cantidad ahorrada" />
+
+            <TextView
+                android:id="@+id/textViewMontoMensualNavideno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Monto mensual ahorrado" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewCantidadValorNavideno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/textViewMontoMensualValorNavideno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Tabla para los ahorros escolares -->
+    <TextView
+        android:id="@+id/textViewEscolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="Escolar"
+        app:layout_constraintStart_toStartOf="textViewMontoMensualValorNavideno"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayoutNavideno" />
+
+    <Button
+        android:id="@+id/buttonEscolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activar/Desactivar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEscolar" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutEscolar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEscolar">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewCantidadEscolar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cantidad ahorrada" />
+
+            <TextView
+                android:id="@+id/textViewMontoMensualEscolar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Monto mensual ahorrado" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewCantidadValorEscolar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/textViewMontoMensualValorEscolar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Tabla para el ahorro Extraordinario -->
+
+    <TextView
+        android:id="@+id/textViewMarchamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="Marchamo"
+        app:layout_constraintStart_toStartOf="textViewMontoMensualValorMarchamo"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayoutEscolar" />
+
+    <Button
+        android:id="@+id/buttonMarchamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activar/Desactivar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMarchamo" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutMarchamo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMarchamo">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewCantidadMarchamo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cantidad ahorrada" />
+
+            <TextView
+                android:id="@+id/textViewMontoMensualMarchamo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Monto mensual ahorrado" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewCantidadValorMarchamo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/textViewMontoMensualValorMarchamo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Tabla para el ahorro Extraordinario -->
+
+    <TextView
+        android:id="@+id/textViewExtraordinario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="Extraordinario"
+        app:layout_constraintStart_toStartOf="textViewMontoMensualValorExtraordinario"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayoutMarchamo" />
+
+    <Button
+        android:id="@+id/buttonExtraordinario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Activar/Desactivar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExtraordinario" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutExtraordinario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonExtraordinario">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewCantidadExtraordinario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cantidad ahorrada" />
+
+            <TextView
+                android:id="@+id/textViewMontoMensualExtraordinario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Monto mensual ahorrado" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewCantidadValorExtraordinario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/textViewMontoMensualValorExtraordinario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/btn_background"
+        android:text="@string/EnviarCambios"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayoutExtraordinario"
+        app:layout_constraintVertical_bias="0.757" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

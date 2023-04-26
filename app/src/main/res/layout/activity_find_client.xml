@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/tv_info_general_title"
+        android:layout_width="411dp"
+        android:layout_height="224dp"
+        android:layout_marginButton="4dp"
+        android:background="@drawable/background_intro"
+        android:contentDescription="@string/ingrese_a_la_app_de_asodesunidos_para_sus_gestiones_como_asociado"
+        android:text="@string/ingrese_a_la_app_de_asodesunidos_para_sus_gestiones_como_asociado"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewTituloIngresarCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:ems="10"
+            android:text="@string/ingrese_la_cedula_a_buscar"
+            android:textAlignment="center"
+            android:textColor="@color/font"
+            android:textSize="32sp" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/editTextCedula"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_background"
+        android:ems="10"
+        android:hint="@string/ingrese_la_cedula_del_cliente"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColorHint="#858585"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_general_title"
+        tools:ignore="LabelFor,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="-200dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/btn_background"
+        android:text="@string/buscar"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCedula"
+        app:layout_constraintVertical_bias="0.593"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
