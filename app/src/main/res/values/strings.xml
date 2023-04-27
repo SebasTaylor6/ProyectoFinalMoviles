@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">ProyectoFinalMoviles</string>
+    <string name="log_in">login</string>
+    <string name="exit">Exit</string>
+    <string name="Crear">Crear</string>
+    <string name="guardar">Guardar</string>
+    <string name="EnviarCambios">Enviar Cambios</string>
+    <string name="calcular_cuota">calcular Cuota</string>
+    <string name="pagar">Pagar</string>
+    <string name="volver">Volver</string>
+    <string name="password">password</string>
+    <string name="edusername">edusername</string>
+    <string name="passwordLabel">password</string>
+    <string name="usernamelbl">Username</string>
+    <string name="buscar">introducir cedula a buscar</string>
+    <string name="ingrese_a_la_app_de_asodesunidos_para_sus_gestiones_como_asociado">Ingrese a la App de AsoDesUnidos para sus gestiones como asociado</string>
+    <string name="ingrese_la_cedula_a_buscar">Ingrese la cedula a buscar</string>
+    <string name="ingrese_el_monto_deseado">Ingrese el monto deseado</string>
+    <string name="textViewCrearPrestamo">Crear Prestamo</string>
+    <string name="ingrese_la_informacion_de_asociado">Ingrese la informacion del nuevo asociado</string>
+    <string name="ingrese_la_informacion_a_editar">Ingrese la informacion a editar</string>
+    <string name="ingrese_la_cedula_del_cliente">buscar cliente</string>
+    <string name="asodesunidos">AsoDesUnidos</string>
+    <string name="ingrese_su_usuario">Ingrese su usuario</string>
+    <string name="ingrese_su_contrase_a">Ingrese su contraseña</string>
+        <string name="duracion_prompt">Duración del préstamo</string>
+        <string-array name="duracion_opciones">
+            <item>3 años</item>
+            <item>5 años</item>
+            <item>10 años</item>
+        </string-array>
+        <string name="tipo_prompt">Tipo de préstamo</string>
+        <string-array name="tipo_opciones">
+            <item>Hipotecario: 7.5%</item>
+            <item>Educación: 8%</item>
+            <item>Personal: 10%</item>
+            <item>Viajes: 12%</item>
+        </string-array>
+    <string-array name="estado_civil">
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Divociado</item>
+        <item>Viudo</item>
+    </string-array>
+
 </resources>
